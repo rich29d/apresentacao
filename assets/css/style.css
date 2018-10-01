@@ -1,0 +1,103 @@
+@font-face{
+    font-family: kenyan;
+    src: url(kenyan.ttf);
+}
+
+
+body{
+    margin: 0;
+    font-family: 'kenyan', sans-serif;
+}
+
+a, img{
+    outline: none;
+    border: none;
+}
+
+.itens, .cont-gallery{
+    background: url(../imgs/background.jpg) center center no-repeat fixed;
+    background-size: cover;
+	width: 100%;
+    height: 100%;
+    padding-top: 5%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*visibility: hidden;*/
+    overflow: auto;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+header{
+    width: 100%;
+}
+header .logo{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top:  10px;
+    z-index: 2;
+}
+
+.sec-itens, .sec-gallery{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow: auto;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.sec-gallery{
+    display: none;
+}
+
+.titulo{
+    font-size: 25em;
+    text-align:  center;
+    color: #FFF;
+    height: 300px;
+}
+
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+
+.gallery{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.gallery .gal-item{
+    width: 100%;
+    height: auto;
+}
+
+.gallery .gal-item img{
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+}
